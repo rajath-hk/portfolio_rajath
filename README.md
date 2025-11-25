@@ -1,73 +1,117 @@
-# Welcome to your Lovable project
+# Rajath Hegde - Portfolio
 
-## Project info
+Welcome to my personal portfolio website! This project showcases my skills, experience, and projects as a Full Stack Developer and AI/ML enthusiast.
 
-**URL**: https://lovable.dev/projects/dbc474c3-398d-467b-a466-35c2391a2be7
+## 🌐 Live Demo
 
-## How can I edit this code?
+Visit the live portfolio: [Rajath's Portfolio](https://your-deployed-url-here.com)
 
-There are several ways of editing your application.
+## 🧠 About Me
 
-**Use Lovable**
+Hi there! I'm Rajath Hegde, a passionate Full Stack Developer with expertise in creating modern web applications. I specialize in:
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/dbc474c3-398d-467b-a466-35c2391a2be7) and start prompting.
+- Full Stack Development (React, Node.js)
+- AI/ML Integration (GPT, Llama 3, NLP solutions)
+- Creative Production (Video editing, Animation, UI/UX)
 
-Changes made via Lovable will be committed automatically to this repo.
+I love solving complex problems and turning ideas into reality through code.
 
-**Use your preferred IDE**
+## 🛠️ Technologies Used
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+This portfolio is built with modern technologies including:
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- **Vite** - Next Generation Frontend Tooling
+- **TypeScript** - Typed superset of JavaScript
+- **React** - JavaScript library for building user interfaces
+- **Tailwind CSS** - Utility-first CSS framework
+- **shadcn/ui** - Re-usable components built with Radix UI and Tailwind CSS
+- **React Router** - Declarative routing for React
+- **TanStack Query** - Powerful asynchronous state management
 
-Follow these steps:
+## 🚀 Features
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+- Responsive design that works on all devices
+- Modern UI with interactive components
+- Dedicated sections for:
+  - About Me
+  - Skills
+  - Experience
+  - Projects
+  - Contact information
+- Smooth navigation and animations
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## 📦 Getting Started
 
-# Step 3: Install the necessary dependencies.
-npm i
+To run this project locally, follow these steps:
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+### Prerequisites
+
+- Node.js (version 16 or higher)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/portfolio_rajath.git
+```
+
+2. Navigate to the project directory:
+```bash
+cd portfolio_rajath
+```
+
+3. Install dependencies:
+```bash
+npm install
+```
+
+4. Start the development server:
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+The application will be available at `http://localhost:5173` (default Vite port).
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Building for Production
 
-**Use GitHub Codespaces**
+To create a production build:
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+```bash
+npm run build
+```
 
-## What technologies are used for this project?
+To preview the production build:
 
-This project is built with:
+```bash
+npm run preview
+```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## 📁 Project Structure
 
-## How can I deploy this project?
+```
+src/
+├── components/     # Reusable UI components
+├── pages/          # Page components for routing
+├── assets/         # Images and static assets
+├── hooks/          # Custom React hooks
+├── lib/            # Utility functions and helpers
+├── App.tsx         # Main app component with routing
+└── main.tsx        # Entry point
+```
 
-Simply open [Lovable](https://lovable.dev/projects/dbc474c3-398d-467b-a466-35c2391a2be7) and click on Share -> Publish.
+## 🤝 Contributing
 
-## Can I connect a custom domain to my Lovable project?
+While this is a personal portfolio project, suggestions and feedback are welcome! Feel free to open an issue if you find any bugs or have suggestions for improvements.
 
-Yes, you can!
+## 📫 Contact
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Feel free to reach out to me through:
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+- [LinkedIn](#) (add your LinkedIn profile)
+- [Email](mailto:your.email@example.com)
+- [GitHub](https://github.com/yourusername)
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
