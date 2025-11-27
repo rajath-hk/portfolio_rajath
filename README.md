@@ -1,117 +1,73 @@
-# Rajath Hegde - Portfolio
+# Welcome to your Lovable project
 
-Welcome to my personal portfolio website! This project showcases my skills, experience, and projects as a Full Stack Developer and AI/ML enthusiast.
+## Project info
 
-## 🌐 Live Demo
+**URL**: https://lovable.dev/projects/dbc474c3-398d-467b-a466-35c2391a2be7
 
-Visit the live portfolio: [Rajath's Portfolio](https://your-deployed-url-here.com)
+## How can I edit this code?
 
-## 🧠 About Me
+There are several ways of editing your application.
 
-Hi there! I'm Rajath Hegde, a passionate Full Stack Developer with expertise in creating modern web applications. I specialize in:
+**Use Lovable**
 
-- Full Stack Development (React, Node.js)
-- AI/ML Integration (GPT, Llama 3, NLP solutions)
-- Creative Production (Video editing, Animation, UI/UX)
+Simply visit the [Lovable Project](https://lovable.dev/projects/dbc474c3-398d-467b-a466-35c2391a2be7) and start prompting.
 
-I love solving complex problems and turning ideas into reality through code.
+Changes made via Lovable will be committed automatically to this repo.
 
-## 🛠️ Technologies Used
+**Use your preferred IDE**
 
-This portfolio is built with modern technologies including:
+If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
 
-- **Vite** - Next Generation Frontend Tooling
-- **TypeScript** - Typed superset of JavaScript
-- **React** - JavaScript library for building user interfaces
-- **Tailwind CSS** - Utility-first CSS framework
-- **shadcn/ui** - Re-usable components built with Radix UI and Tailwind CSS
-- **React Router** - Declarative routing for React
-- **TanStack Query** - Powerful asynchronous state management
+The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
-## 🚀 Features
+Follow these steps:
 
-- Responsive design that works on all devices
-- Modern UI with interactive components
-- Dedicated sections for:
-  - About Me
-  - Skills
-  - Experience
-  - Projects
-  - Contact information
-- Smooth navigation and animations
+```sh
+# Step 1: Clone the repository using the project's Git URL.
+git clone <YOUR_GIT_URL>
 
-## 📦 Getting Started
+# Step 2: Navigate to the project directory.
+cd <YOUR_PROJECT_NAME>
 
-To run this project locally, follow these steps:
+# Step 3: Install the necessary dependencies.
+npm i
 
-### Prerequisites
-
-- Node.js (version 16 or higher)
-- npm or yarn
-
-### Installation
-
-1. Clone the repository:
-```bash
-git clone https://github.com/yourusername/portfolio_rajath.git
-```
-
-2. Navigate to the project directory:
-```bash
-cd portfolio_rajath
-```
-
-3. Install dependencies:
-```bash
-npm install
-```
-
-4. Start the development server:
-```bash
+# Step 4: Start the development server with auto-reloading and an instant preview.
 npm run dev
 ```
 
-The application will be available at `http://localhost:5173` (default Vite port).
+**Edit a file directly in GitHub**
 
-### Building for Production
+- Navigate to the desired file(s).
+- Click the "Edit" button (pencil icon) at the top right of the file view.
+- Make your changes and commit the changes.
 
-To create a production build:
+**Use GitHub Codespaces**
 
-```bash
-npm run build
-```
+- Navigate to the main page of your repository.
+- Click on the "Code" button (green button) near the top right.
+- Select the "Codespaces" tab.
+- Click on "New codespace" to launch a new Codespace environment.
+- Edit files directly within the Codespace and commit and push your changes once you're done.
 
-To preview the production build:
+## What technologies are used for this project?
 
-```bash
-npm run preview
-```
+This project is built with:
 
-## 📁 Project Structure
+- Vite
+- TypeScript
+- React
+- shadcn-ui
+- Tailwind CSS
 
-```
-src/
-├── components/     # Reusable UI components
-├── pages/          # Page components for routing
-├── assets/         # Images and static assets
-├── hooks/          # Custom React hooks
-├── lib/            # Utility functions and helpers
-├── App.tsx         # Main app component with routing
-└── main.tsx        # Entry point
-```
+## How can I deploy this project?
 
-## 🤝 Contributing
+Simply open [Lovable](https://lovable.dev/projects/dbc474c3-398d-467b-a466-35c2391a2be7) and click on Share -> Publish.
 
-While this is a personal portfolio project, suggestions and feedback are welcome! Feel free to open an issue if you find any bugs or have suggestions for improvements.
+## Can I connect a custom domain to my Lovable project?
 
-## 📫 Contact
+Yes, you can!
 
-Feel free to reach out to me through:
+To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
 
-- [LinkedIn](#) (add your LinkedIn profile)
-- [Email](mailto:your.email@example.com)
-- [GitHub](https://github.com/yourusername)
-
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
+Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)

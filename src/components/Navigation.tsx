@@ -7,7 +7,6 @@ const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
-  const { theme, setTheme } = useTheme();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -70,8 +69,6 @@ const Navigation = () => {
             size="icon"
             className="md:hidden border-4 border-border shadow-sm"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
-            aria-expanded={isMobileMenuOpen}
           >
             {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </Button>
@@ -93,17 +90,8 @@ const Navigation = () => {
               </Link>
             ))}
             <Button
-              variant="outline"
-              size="icon"
-              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-              className="w-full mb-4 border-4 border-border shadow-sm"
-            >
-              {theme === "dark" ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
-              <span className="ml-2">{theme === "dark" ? "Light Mode" : "Dark Mode"}</span>
-            </Button>
-            <Button
               asChild
-              className="w-full border-4 border-border shadow-sm"
+              className="w-full mt-4 border-4 border-border shadow-sm"
             >
               <Link to="/contact" onClick={() => setIsMobileMenuOpen(false)}>
                 Hire Me
