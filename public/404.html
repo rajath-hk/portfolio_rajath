@@ -11,8 +11,13 @@
       // Extract the path after the repository name
       if (path.startsWith(repoName)) {
         const newPath = path.substring(repoName.length);
-        // Redirect to the main page with hash routing
-        window.location.replace(repoName + '/#' + newPath);
+        // For BrowserRouter, we should serve the index.html file
+        // So we redirect to the root with the correct path
+        if (newPath === '' || newPath === '/') {
+          window.location.replace(repoName + '/');
+        } else {
+          window.location.replace(repoName + '/' + newPath);
+        }
       } else {
         // Fallback redirect
         window.location.replace(repoName + '/');
