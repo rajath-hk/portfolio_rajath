@@ -24,7 +24,7 @@ const Footer = () => {
                 <Github className="w-5 h-5" />
               </a>
               <a
-                href="https://linkedin.com/in/rajath-hegde"
+                href="https://www.linkedin.com/in/rajath-hegde-1742462ab"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 border-4 border-border bg-background hover:translate-x-1 hover:translate-y-1 transition-transform"

@@ -201,7 +201,7 @@ const Contact = () => {
                     </a>
 
                     <a
-                      href="https://linkedin.com/in/rajath-hegde"
+                      href="https://www.linkedin.com/in/rajath-hegde-1742462ab"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center justify-center gap-3 p-4 bg-background border-4 border-border hover:translate-x-2 hover:translate-y-2 transition-transform"
