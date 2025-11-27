@@ -7,8 +7,14 @@ import heroImage from "@/assets/hero-bg.jpg";
 
 const Home = () => {
   return (
-    <div className="min-h-screen">
-      <Navigation />
+    <>
+      <SEO
+        title="Rajath Hegde - Full Stack Developer & AI Enthusiast"
+        description="Full Stack Developer specializing in React, AI/ML integration, and creative problem solving. Building intelligent web applications with modern technologies."
+        keywords="full stack developer, react, ai ml, web development, rajath hegde, portfolio"
+      />
+      <div className="min-h-screen">
+        <Navigation />
       
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
@@ -155,7 +161,8 @@ const Home = () => {
       </section>
 
       <Footer />
-    </div>
+      </div>
+    </>
   );
 };
 

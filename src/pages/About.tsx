@@ -7,8 +7,14 @@ import profileImage from "@/assets/profile.jpg";
 
 const About = () => {
   return (
-    <div className="min-h-screen">
-      <Navigation />
+    <>
+      <SEO
+        title="About Rajath Hegde - Full Stack Developer & Creative Thinker"
+        description="Learn about Rajath Hegde's journey as a full stack developer, AI enthusiast, and creative problem solver. Discover his education, skills, and passion for technology."
+        keywords="about rajath hegde, full stack developer, ai ml, education, skills, portfolio"
+      />
+      <div className="min-h-screen">
+        <Navigation />
       
       <main className="pt-32 pb-20">
         <div className="container mx-auto px-4">
