@@ -14,15 +14,8 @@ const Contact = () => {
     subject: "",
     message: ""
   });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // In a real application, this would send the data to a backend
-    toast.success("Message sent! I'll get back to you soon.", {
-      description: "Thank you for reaching out!"
-    });
-    setFormData({ name: "", email: "", subject: "", message: "" });
-  };
+  
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
@@ -30,6 +23,39 @@ const Contact = () => {
       [e.target.name]: e.target.value
     });
   };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    
+    try {
+      const response = await fetch("https://formspree.io/f/mangjevd", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+      
+      if (response.ok) {
+        toast.success("Message sent! I'll get back to you soon.", {
+          description: "Thank you for reaching out!"
+        });
+        setFormData({ name: "", email: "", subject: "", message: "" });
+      } else {
+        toast.error("Error sending message", {
+          description: "Please try again later."
+        });
+      }
+    } catch (error) {
+      toast.error("Network error", {
+        description: "Please check your connection and try again."
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
 
   return (
     <div className="min-h-screen">
@@ -55,6 +81,9 @@ const Contact = () => {
                   </h2>
                   
                   <form onSubmit={handleSubmit} className="space-y-6">
+                    <input type="hidden" name="_subject" value={`New message from ${formData.name}: ${formData.subject}`} />
+                    <input type="hidden" name="_cc" value="rajathhege71@gmail.com" />
+                    
                     <div>
                       <label htmlFor="name" className="block text-sm font-bold mb-2 uppercase">
                         Your Name *
@@ -68,6 +97,7 @@ const Contact = () => {
                         onChange={handleChange}
                         className="border-4 border-border focus:border-primary"
                         placeholder="John Doe"
+                        disabled={isSubmitting}
                       />
                     </div>
 
@@ -84,6 +114,7 @@ const Contact = () => {
                         onChange={handleChange}
                         className="border-4 border-border focus:border-primary"
                         placeholder="john@example.com"
+                        disabled={isSubmitting}
                       />
                     </div>
 
@@ -100,6 +131,7 @@ const Contact = () => {
                         onChange={handleChange}
                         className="border-4 border-border focus:border-primary"
                         placeholder="Project Inquiry"
+                        disabled={isSubmitting}
                       />
                     </div>
 
@@ -115,16 +147,27 @@ const Contact = () => {
                         onChange={handleChange}
                         className="border-4 border-border focus:border-primary min-h-[150px]"
                         placeholder="Tell me about your project..."
+                        disabled={isSubmitting}
                       />
                     </div>
 
                     <Button
                       type="submit"
                       size="lg"
+                      disabled={isSubmitting}
                       className="w-full border-4 border-border shadow-md hover:translate-x-2 hover:translate-y-2 transition-transform"
                     >
-                      <Send className="w-5 h-5 mr-2" />
-                      SEND MESSAGE
+                      {isSubmitting ? (
+                        <>
+                          <div className="mr-2 h-4 w-4 animate-spin rounded-full border-2 border-current border-t-transparent"></div>
+                          SENDING...
+                        </>
+                      ) : (
+                        <>
+                          <Send className="w-5 h-5 mr-2" />
+                          SEND MESSAGE
+                        </>
+                      )}
                     </Button>
                   </form>
                 </div>
@@ -176,7 +219,7 @@ const Contact = () => {
                       <div>
                         <h3 className="font-bold mb-1 uppercase text-sm">Location</h3>
                         <p className="text-muted-foreground">
-                          Udupi, Karnataka<br />India
+                          Karnataka<br />India
                         </p>
                       </div>
                     </div>
@@ -214,45 +257,12 @@ const Contact = () => {
 
                 {/* Availability */}
                 <div className="bg-primary text-primary-foreground border-4 border-border p-8 text-center">
-                  <h3 className="text-xl font-bold mb-3 font-mono">AVAILABILITY</h3>
-                  <p className="text-lg opacity-90 mb-4">
-                    Currently available for freelance projects and full-time opportunities
+                  <h3 className="text-2xl font-bold mb-3 font-mono">CURRENTLY AVAILABLE</h3>
+                  <p className="opacity-90">
+                    I'm actively seeking new opportunities and projects. 
+                    Whether you have a full-time position or a freelance project, 
+                    feel free to reach out!
                   </p>
-                  <div className="inline-block px-6 py-2 bg-primary-foreground text-primary border-4 border-primary-foreground font-bold">
-                    OPEN TO WORK
-                  </div>
-                </div>
-
-                {/* Response Time */}
-                <div className="bg-background border-4 border-border p-6 text-center">
-                  <p className="text-sm text-muted-foreground font-bold">
-                    ⚡ Typical response time: Within 24 hours
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* Additional Info */}
-            <div className="mt-16 max-w-4xl mx-auto">
-              <div className="bg-muted border-4 border-border p-8 text-center">
-                <h2 className="text-2xl font-bold mb-4 font-mono">LET'S CREATE SOMETHING AMAZING</h2>
-                <p className="text-lg text-muted-foreground mb-6">
-                  Whether you have a project in mind, need technical consultation, or just want to connect, 
-                  I'm always excited to hear about new opportunities and ideas. Let's turn your vision into reality!
-                </p>
-                <div className="flex flex-wrap justify-center gap-4 text-sm">
-                  <span className="px-4 py-2 bg-background border-2 border-border font-bold">
-                    Web Development
-                  </span>
-                  <span className="px-4 py-2 bg-background border-2 border-border font-bold">
-                    AI Integration
-                  </span>
-                  <span className="px-4 py-2 bg-background border-2 border-border font-bold">
-                    Video Production
-                  </span>
-                  <span className="px-4 py-2 bg-background border-2 border-border font-bold">
-                    Consultation
-                  </span>
                 </div>
               </div>
             </div>
