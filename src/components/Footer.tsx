@@ -1,4 +1,3 @@
-import React from "react";
 import { Github, Linkedin, Mail, Phone, MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -12,33 +11,29 @@ const Footer = () => {
           {/* About Section */}
           <div>
             <h3 className="text-2xl font-bold mb-4 font-mono">RAJATH HEGDE</h3>
-            <p className="text-muted-foreground mb-6">
-              Full-stack developer and creative technologist passionate about building 
-              intelligent digital solutions that make a difference.
+            <p className="text-muted-foreground mb-4">
+              Full Stack Developer passionate about building innovative solutions with AI/ML and modern web technologies.
             </p>
             <div className="flex gap-4">
               <a
                 href="https://github.com/rajath-hk"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-3 border-2 border-border bg-background hover:bg-primary hover:text-primary-foreground transition-colors"
-                aria-label="GitHub"
+                className="p-2 border-4 border-border bg-background hover:translate-x-1 hover:translate-y-1 transition-transform"
               >
                 <Github className="w-5 h-5" />
               </a>
               <a
-                href="https://www.linkedin.com/in/rajath-hegde-1742462ab"
+                href="https://linkedin.com/in/rajath-hegde"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-3 border-2 border-border bg-background hover:bg-primary hover:text-primary-foreground transition-colors"
-                aria-label="LinkedIn"
+                className="p-2 border-4 border-border bg-background hover:translate-x-1 hover:translate-y-1 transition-transform"
               >
                 <Linkedin className="w-5 h-5" />
               </a>
               <a
                 href="mailto:rajathhege71@gmail.com"
-                className="p-3 border-2 border-border bg-background hover:bg-primary hover:text-primary-foreground transition-colors"
-                aria-label="Email"
+                className="p-2 border-4 border-border bg-background hover:translate-x-1 hover:translate-y-1 transition-transform"
               >
                 <Mail className="w-5 h-5" />
               </a>
@@ -49,68 +44,52 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-4 font-mono">QUICK LINKS</h3>
             <ul className="space-y-2">
-              <li>
-                <Link to="/" className="text-muted-foreground hover:text-foreground transition-colors">
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link to="/about" className="text-muted-foreground hover:text-foreground transition-colors">
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link to="/skills" className="text-muted-foreground hover:text-foreground transition-colors">
-                  Skills
-                </Link>
-              </li>
-              <li>
-                <Link to="/experience" className="text-muted-foreground hover:text-foreground transition-colors">
-                  Experience
-                </Link>
-              </li>
-              <li>
-                <Link to="/projects" className="text-muted-foreground hover:text-foreground transition-colors">
-                  Projects
-                </Link>
-              </li>
-              <li>
-                <Link to="/contact" className="text-muted-foreground hover:text-foreground transition-colors">
-                  Contact
-                </Link>
-              </li>
+              {["Home", "About", "Skills", "Experience", "Projects", "Contact"].map((link) => (
+                <li key={link}>
+                  <Link
+                    to={link === "Home" ? "/" : `/${link.toLowerCase()}`}
+                    className="text-muted-foreground hover:text-foreground transition-colors hover:translate-x-1 inline-block"
+                  >
+                    → {link}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
           {/* Contact Info */}
           <div>
             <h3 className="text-xl font-bold mb-4 font-mono">CONTACT INFO</h3>
-            <div className="space-y-4">
-              <div className="flex items-start gap-3">
+            <ul className="space-y-3">
+              <li className="flex items-start gap-2">
                 <Mail className="w-5 h-5 mt-1 flex-shrink-0" />
-                <a href="mailto:rajathhege71@gmail.com" className="text-muted-foreground hover:text-foreground break-all">
+                <a
+                  href="mailto:rajathhege71@gmail.com"
+                  className="text-muted-foreground hover:text-foreground break-all"
+                >
                   rajathhege71@gmail.com
                 </a>
-              </div>
-              <div className="flex items-start gap-3">
+              </li>
+              <li className="flex items-start gap-2">
                 <Phone className="w-5 h-5 mt-1 flex-shrink-0" />
-                <a href="tel:+919482250897" className="text-muted-foreground hover:text-foreground">
+                <a
+                  href="tel:+919482250897"
+                  className="text-muted-foreground hover:text-foreground"
+                >
                   +91 9482250897
                 </a>
-              </div>
-              <div className="flex items-start gap-3">
+              </li>
+              <li className="flex items-start gap-2">
                 <MapPin className="w-5 h-5 mt-1 flex-shrink-0" />
-                <span className="text-muted-foreground">
-                  Udupi, Karnataka<br />India
-                </span>
-              </div>
-            </div>
+                <span className="text-muted-foreground">Udupi, Karnataka, India</span>
+              </li>
+            </ul>
           </div>
         </div>
 
-        <div className="border-t-2 border-border mt-12 pt-8 text-center">
-          <p className="text-muted-foreground">
-            © {currentYear} Rajath Hegde. All rights reserved.
+        <div className="mt-12 pt-8 border-t-4 border-border text-center">
+          <p className="text-muted-foreground font-mono">
+            © {currentYear} Rajath Hegde. All rights reserved. Built with React & ❤️
           </p>
         </div>
       </div>

@@ -1,4 +1,3 @@
-import React from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -69,12 +68,6 @@ const About = () => {
                       src={profileImage}
                       alt="Rajath Hegde"
                       className="w-full h-auto"
-                      onError={(e) => {
-                        // Handle image loading error
-                        const target = e.target as HTMLImageElement;
-                        target.style.display = 'none';
-                        console.warn('Failed to load profile image');
-                      }}
                     />
                   </div>
                   <div className="absolute -bottom-4 -right-4 w-32 h-32 border-4 border-border bg-primary -z-10" />
