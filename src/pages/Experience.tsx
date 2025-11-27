@@ -1,3 +1,4 @@
+import React from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Briefcase, Code, Calendar, CheckCircle } from "lucide-react";
@@ -22,19 +23,35 @@ const Experience = () => {
     },
     {
       role: "Full Stack Developer",
-      company: "Personal Projects & Open Source",
+      company: "Personal Projects",
       type: "Self-Employed",
       period: "2022 - Present",
-      location: "Udupi, India",
-      description: "Building real-world web applications with modern technologies and AI integration",
+      location: "Remote",
+      description: "Developing innovative web applications with modern technologies",
       achievements: [
-        "Developed 10+ full-stack applications using React and backend technologies",
-        "Integrated AI capabilities including Llama 3 and OpenAI APIs",
-        "Implemented real-time features using WebRTC and WebSockets",
-        "Used proper version control and GitHub workflows for all projects",
-        "Created scalable, user-friendly applications serving 100+ users"
+        "Built real-time virtual classroom platform with WebRTC video conferencing",
+        "Created AI-powered chatbot using GPT and Llama 3 models",
+        "Developed responsive websites with React, Node.js, and MongoDB",
+        "Implemented authentication systems and RESTful APIs",
+        "Deployed applications using cloud services like Vercel and Render"
       ],
-      technologies: ["React", "Node.js", "Python", "AI/ML", "AWS", "GitHub"]
+      technologies: ["React", "Node.js", "MongoDB", "WebRTC", "GPT API", "Llama 3"]
+    },
+    {
+      role: "Creative Designer",
+      company: "Freelance",
+      type: "Contract",
+      period: "2021 - 2023",
+      location: "Remote",
+      description: "Designing visual content for brands and digital platforms",
+      achievements: [
+        "Created brand identities for 10+ startups",
+        "Designed UI/UX for mobile and web applications",
+        "Produced motion graphics for social media campaigns",
+        "Developed print materials for marketing events",
+        "Managed design projects from concept to delivery"
+      ],
+      technologies: ["Figma", "Illustrator", "Photoshop", "After Effects", "Premiere Pro"]
     }
   ];
 
@@ -46,82 +63,65 @@ const Experience = () => {
         <div className="container mx-auto px-4">
           {/* Header */}
           <div className="max-w-4xl mx-auto text-center mb-16">
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 font-mono">EXPERIENCE</h1>
+            <h1 className="text-5xl md:text-7xl font-bold mb-6 font-mono">MY EXPERIENCE</h1>
             <p className="text-xl text-muted-foreground">
-              Professional journey of building, creating, and innovating
+              A journey through my professional development and creative endeavors
             </p>
           </div>
 
           {/* Timeline */}
-          <div className="max-w-4xl mx-auto mb-20">
-            <div className="space-y-12">
+          <div className="max-w-4xl mx-auto">
+            <div className="relative">
+              {/* Vertical line */}
+              <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 bg-border transform md:-translate-x-1/2" />
+              
               {experiences.map((exp, index) => (
                 <div
                   key={index}
-                  className="relative pl-8 md:pl-12 border-l-4 border-border"
+                  className={`relative mb-12 pl-12 md:pl-0 ${index % 2 === 0 ? 'md:pr-12 md:text-right' : 'md:pl-12'}`}
                 >
                   {/* Timeline dot */}
-                  <div className="absolute -left-[13px] top-0 w-6 h-6 bg-primary border-4 border-border" />
+                  <div className="absolute left-1.5 md:left-1/2 top-2 w-5 h-5 bg-primary border-4 border-border rounded-full transform md:-translate-x-1/2" />
                   
-                  <div className="bg-muted border-4 border-border shadow-md p-6 md:p-8">
-                    {/* Header */}
-                    <div className="mb-6">
-                      <div className="flex flex-wrap items-start justify-between gap-4 mb-3">
-                        <div>
-                          <h2 className="text-2xl md:text-3xl font-bold font-mono mb-2">
-                            {exp.role}
-                          </h2>
-                          <div className="flex flex-wrap items-center gap-3 text-muted-foreground">
-                            <span className="flex items-center gap-2">
-                              <Briefcase className="w-4 h-4" />
-                              {exp.company}
-                            </span>
-                            <span className="px-3 py-1 bg-primary text-primary-foreground text-xs font-bold border-2 border-border">
-                              {exp.type}
-                            </span>
-                          </div>
-                        </div>
-                        <div className="text-right">
-                          <div className="flex items-center gap-2 text-muted-foreground mb-1">
-                            <Calendar className="w-4 h-4" />
-                            <span className="font-mono text-sm">{exp.period}</span>
-                          </div>
-                          <div className="text-sm text-muted-foreground">{exp.location}</div>
-                        </div>
-                      </div>
-                      
-                      <p className="text-lg text-muted-foreground">{exp.description}</p>
+                  <div className={`bg-muted border-4 border-border shadow-xl p-8 hover:translate-x-2 hover:translate-y-2 transition-transform ${index % 2 === 0 ? 'md:mr-8' : 'md:ml-8'}`}>
+                    <div className="flex flex-wrap items-center justify-between gap-4 mb-4">
+                      <h2 className="text-2xl font-bold font-mono">{exp.role}</h2>
+                      <span className="px-3 py-1 bg-background border-2 border-border text-sm font-bold">
+                        {exp.type}
+                      </span>
                     </div>
-
-                    {/* Achievements */}
+                    
+                    <div className="flex flex-wrap items-center justify-between gap-4 mb-4">
+                      <h3 className="text-xl font-bold text-primary">{exp.company}</h3>
+                      <div className="flex items-center gap-2 text-muted-foreground">
+                        <Calendar className="w-4 h-4" />
+                        <span>{exp.period}</span>
+                      </div>
+                    </div>
+                    
+                    <p className="text-muted-foreground mb-6">{exp.description}</p>
+                    
                     <div className="mb-6">
-                      <h3 className="text-lg font-bold mb-4 font-mono flex items-center gap-2">
+                      <h4 className="font-bold mb-2 flex items-center gap-2">
                         <CheckCircle className="w-5 h-5" />
-                        KEY ACHIEVEMENTS
-                      </h3>
+                        Key Achievements
+                      </h4>
                       <ul className="space-y-2">
-                        {exp.achievements.map((achievement, achIndex) => (
-                          <li
-                            key={achIndex}
-                            className="flex items-start gap-3 text-muted-foreground"
-                          >
-                            <span className="text-primary font-bold mt-1">→</span>
+                        {exp.achievements.map((achievement, i) => (
+                          <li key={i} className="flex items-start gap-2">
+                            <span className="mt-1 w-1.5 h-1.5 bg-primary rounded-full flex-shrink-0" />
                             <span>{achievement}</span>
                           </li>
                         ))}
                       </ul>
                     </div>
-
-                    {/* Technologies */}
+                    
                     <div>
-                      <h3 className="text-lg font-bold mb-3 font-mono flex items-center gap-2">
-                        <Code className="w-5 h-5" />
-                        TECHNOLOGIES USED
-                      </h3>
+                      <h4 className="font-bold mb-2">Technologies Used</h4>
                       <div className="flex flex-wrap gap-2">
-                        {exp.technologies.map((tech, techIndex) => (
+                        {exp.technologies.map((tech, i) => (
                           <span
-                            key={techIndex}
+                            key={i}
                             className="px-3 py-1 bg-background border-2 border-border text-sm font-bold"
                           >
                             {tech}
@@ -135,62 +135,17 @@ const Experience = () => {
             </div>
           </div>
 
-          {/* Skills Developed */}
-          <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center font-mono">
-              SKILLS DEVELOPED
-            </h2>
-            
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="p-6 bg-muted border-4 border-border shadow-md">
-                <h3 className="text-xl font-bold mb-4 font-mono">Technical Excellence</h3>
-                <ul className="space-y-2 text-muted-foreground">
-                  <li>→ Full-Stack Development</li>
-                  <li>→ AI/ML Integration</li>
-                  <li>→ Real-Time Systems</li>
-                  <li>→ Cloud Infrastructure</li>
-                  <li>→ API Design & Integration</li>
-                </ul>
-              </div>
-
-              <div className="p-6 bg-muted border-4 border-border shadow-md">
-                <h3 className="text-xl font-bold mb-4 font-mono">Creative Production</h3>
-                <ul className="space-y-2 text-muted-foreground">
-                  <li>→ Video Editing & Post-Production</li>
-                  <li>→ Motion Graphics & Animation</li>
-                  <li>→ UI/UX Design</li>
-                  <li>→ Content Strategy</li>
-                  <li>→ Visual Storytelling</li>
-                </ul>
-              </div>
-
-              <div className="p-6 bg-muted border-4 border-border shadow-md">
-                <h3 className="text-xl font-bold mb-4 font-mono">Professional Skills</h3>
-                <ul className="space-y-2 text-muted-foreground">
-                  <li>→ Project Management</li>
-                  <li>→ Client Communication</li>
-                  <li>→ Problem Solving</li>
-                  <li>→ Deadline Management</li>
-                  <li>→ Team Collaboration</li>
-                </ul>
-              </div>
+          {/* Education Highlight */}
+          <div className="max-w-4xl mx-auto mt-20">
+            <div className="bg-primary text-primary-foreground border-4 border-border p-8 text-center">
+              <h2 className="text-2xl md:text-3xl font-bold mb-4 font-mono">
+                EDUCATION & GROWTH
+              </h2>
+              <p className="text-lg opacity-90">
+                Currently pursuing BCA at Mahatma Gandhi Memorial Evening College while continuously 
+                expanding my skills through hands-on projects and real-world experiences.
+              </p>
             </div>
-          </div>
-
-          {/* Call to Action */}
-          <div className="max-w-4xl mx-auto mt-20 p-8 bg-primary text-primary-foreground border-4 border-border text-center">
-            <h2 className="text-2xl md:text-3xl font-bold mb-4 font-mono">
-              READY TO COLLABORATE?
-            </h2>
-            <p className="text-lg mb-6 opacity-90">
-              I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
-            </p>
-            <a
-              href="/contact"
-              className="inline-block px-8 py-3 bg-primary-foreground text-primary border-4 border-primary-foreground font-bold hover:translate-x-2 hover:translate-y-2 transition-transform"
-            >
-              LET'S TALK
-            </a>
           </div>
         </div>
       </main>

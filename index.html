@@ -20,6 +20,20 @@
 
   <body>
     <div id="root"></div>
+    <script>
+      // Handle hash-based routing for GitHub Pages
+      (function () {
+        const hash = window.location.hash;
+        if (hash) {
+          const path = hash.replace('#', '');
+          if (path !== '/') {
+            history.replaceState(null, null, path);
+          } else {
+            history.replaceState(null, null, '/');
+          }
+        }
+      })();
+    </script>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
