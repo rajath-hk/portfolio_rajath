@@ -1,3 +1,4 @@
+import React from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -16,13 +17,6 @@ const Contact = () => {
   });
   
   const [isSubmitting, setIsSubmitting] = useState(false);
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -56,6 +50,12 @@ const Contact = () => {
     }
   };
 
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+  };
 
   return (
     <div className="min-h-screen">
@@ -219,7 +219,7 @@ const Contact = () => {
                       <div>
                         <h3 className="font-bold mb-1 uppercase text-sm">Location</h3>
                         <p className="text-muted-foreground">
-                          Karnataka<br />India
+                          Udupi, Karnataka<br />India
                         </p>
                       </div>
                     </div>
