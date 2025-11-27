@@ -21,15 +21,16 @@
   <body>
     <div id="root"></div>
     <script>
-      // Handle direct visits to routes on GitHub Pages
+      // Handle hash-based routing for GitHub Pages
       (function () {
-        var path = window.location.pathname;
-        var repoName = '/portfolio_rajath';
-        
-        // Check if we're on GitHub Pages but not at a correct path
-        if (path.includes(repoName) && !(path === repoName + '/' || path === repoName)) {
-          // This is handled by our BrowserRouter with basename
-          // No redirect needed as BrowserRouter will handle routing
+        const hash = window.location.hash;
+        if (hash) {
+          const path = hash.replace('#', '');
+          if (path !== '/') {
+            history.replaceState(null, null, path);
+          } else {
+            history.replaceState(null, null, '/');
+          }
         }
       })();
     </script>
