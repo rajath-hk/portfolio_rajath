@@ -142,7 +142,7 @@ const Experience = () => {
                 EDUCATION & GROWTH
               </h2>
               <p className="text-lg opacity-90">
-                Currently pursuing BCA at Mahatma Gandhi Memorial Evening College while continuously 
+                Currently pursuing MCA at AMC Engineering College while continuously 
                 expanding my skills through hands-on projects and real-world experiences.
               </p>
             </div>
