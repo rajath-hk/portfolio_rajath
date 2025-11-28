@@ -172,8 +172,8 @@ const About = () => {
                     { lang: "Kannada", level: "Native" },
                     { lang: "English", level: "Fluent" },
                     { lang: "Hindi", level: "Fluent" },
-                    { lang: "Tulu", level: "Native" },
-                    { lang: "Konkani", level: "Conversational" },
+                    { lang: "Tulu", level: "receptive" },
+                    { lang: "Konkani", level: "mothertongue" },
                     { lang: "Japanese", level: "Beginner" },
                   ].map((item, index) => (
                     <div key={index} className="flex justify-between items-center p-4 bg-muted border-2 border-border">
