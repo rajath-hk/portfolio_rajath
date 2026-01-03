@@ -34,7 +34,7 @@ const About = () => {
                     with a passion for creating intelligent, user-centric digital solutions.
                   </p>
                   <p>
-                    Currently pursuing my <strong className="text-foreground">BCA at Mahatma Gandhi Memorial Evening College</strong>, 
+                    Currently pursuing my <strong className="text-foreground">MCA at AMC Engineering College </strong>, 
                     I've already built real-world applications that serve users daily, from virtual classroom platforms to AI-powered chatbots.
                   </p>
                   <p>
