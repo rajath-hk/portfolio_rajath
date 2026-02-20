@@ -3,6 +3,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Github, Users, Zap, Award } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Projects = () => {
   const projects = [
@@ -185,7 +186,7 @@ const Projects = () => {
                 Let's collaborate and build something amazing together!
               </p>
               <Button asChild size="lg" variant="outline" className="border-4 border-primary-foreground bg-primary text-primary-foreground hover:bg-primary-foreground hover:text-primary shadow-lg">
-                <a href="/contact">Get In Touch</a>
+                <Link to="/contact#contact">Get In Touch</Link>
               </Button>
             </div>
           </div>
