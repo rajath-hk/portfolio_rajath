@@ -117,9 +117,9 @@ const Home = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
               { number: "10+", label: "Projects Completed" },
-              { number: "5+", label: "Technologies" },
-              { number: "2+", label: "Years Experience" },
-              { number: "99%", label: "Client Satisfaction" },
+              { number: "8+", label: "Technologies" },
+              { number: "4+", label: "Years Experience" },
+              { number: "99.9%", label: "Client Satisfaction" },
             ].map((stat, index) => (
               <div
                 key={index}

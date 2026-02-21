@@ -41,7 +41,7 @@ const Experience = () => {
       role: "Creative Designer",
       company: "Freelance",
       type: "Contract",
-      period: "2021 - 2023",
+      period: "2021 - 2025",
       location: "Remote",
       description: "Designing visual content for brands and digital platforms",
       achievements: [
@@ -51,7 +51,7 @@ const Experience = () => {
         "Developed print materials for marketing events",
         "Managed design projects from concept to delivery"
       ],
-      technologies: ["Figma", "Illustrator", "Photoshop", "After Effects", "Premiere Pro"]
+      technologies: ["Figma", "Illustrator", "Photoshop", "After Effects", "Premiere Pro","Animation"]
     }
   ];
 
