@@ -13,7 +13,7 @@ const Projects = () => {
         "A modern portfolio site showcasing projects, experience, and contact details with a clean and responsive layout.",
       longDescription:
         "This repository contains the source for my portfolio website. It focuses on performance, readability, and a structured section-based layout for projects, experience, and contact information.",
-      technologies: ["React", "TypeScript", "Vite", "Tailwind CSS", "shadcn/ui"],
+      technologies: ["React", "TypeScript", "Vite", "Tailwind CSS", "shadcn/ui","expressjavascript","mongoDB"],
       features: [
         "Responsive layout for desktop and mobile",
         "Project and experience showcase sections",
@@ -33,7 +33,7 @@ const Projects = () => {
         "An AI chatbot project focused on handling user prompts and generating contextual responses.",
       longDescription:
         "This project explores chatbot workflows, including prompt handling, response generation, and application structure for integrating language models into a usable interface.",
-      technologies: ["Python", "API Integration", "NLP", "Frontend UI"],
+      technologies: ["Python", "API Integration", "NLP", "Frontend UI","LM Studio","Flask","openai","mongoDB"],
       features: [
         "Prompt-response chat flow",
         "Context-aware message handling",
@@ -53,7 +53,7 @@ const Projects = () => {
         "A classroom platform for managing online teaching workflows, interaction, and remote learning sessions.",
       longDescription:
         "The project is designed around remote classroom needs such as class participation, communication, and student-teacher coordination in a web-based environment.",
-      technologies: ["React", "Node.js", "Real-time Communication", "Web App"],
+      technologies: ["React", "Node.js", "Real-time Communication", "Web App","mongoDB","socket.io"],
       features: [
         "Classroom session management",
         "Interactive communication workflows",
@@ -73,7 +73,7 @@ const Projects = () => {
         "A creative-focused web project highlighting branding, visual content, and presentation-driven pages.",
       longDescription:
         "MadCreative is structured as a showcase-oriented web project with emphasis on visual hierarchy, project storytelling, and crisp layout composition.",
-      technologies: ["HTML", "CSS", "JavaScript", "Frontend Design"],
+      technologies: ["HTML", "CSS", "JavaScript", "Frontend Design","Animation","Tailwind CSS","React","mongoDB"],
       features: [
         "Visual-first landing sections",
         "Project or service presentation blocks",
@@ -153,7 +153,7 @@ const Projects = () => {
         "A systems-level project exploring custom operating system components and low-level programming concepts.",
       longDescription:
         "HegdeOS is focused on core OS concepts such as low-level architecture, system behavior, and building foundational operating system functionality from scratch.",
-      technologies: ["C", "C++", "Assembly", "Systems Programming"],
+      technologies: ["TypeScript","C", "C++", "Assembly", "Systems Programming"],
       features: [
         "Custom low-level systems code",
         "Exploration of kernel-oriented concepts",
