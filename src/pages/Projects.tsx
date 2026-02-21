@@ -6,126 +6,246 @@ import { Link } from "react-router-dom";
 
 const Projects = () => {
   const projects = [
-  {
-    "title": "HegdeOS",
-    "subtitle": "Featured Project - Next-Gen Operating System",
-    "description": "HegdeOS is an open-source operating system project (details limited). It aims to explore low-level system programming with custom kernel development, multitasking, and a graphical interface.",
-    "longDescription": "This flagship personal project involves designing a standalone operating system from the ground up. It likely encompasses kernel development, process scheduling, memory management, and a basic GUI, serving as a platform to experiment with systems-level concepts. Since HegdeOS is a solo endeavor, the team size is one.",
-    "technologies": ["C", "C++", "Assembly", "Linux Kernel"],
-    "features": [
-      "Custom kernel architecture",
-      "Preemptive multitasking",
-      "Basic graphical user interface (GUI)",
-      "Lightweight design for learning OS principles"
-    ],
-    "githubUrl": "#",
-    "demoUrl": "#",
-    "status": "In Development",
-    "teamSize": "Solo Project"
-  },
-  {
-    "title": "FocusList",
-    "subtitle": "Minimalist To-Do List App",
-    "description": "FocusList is a minimal, pastel-themed to-do list app built with Flutter and Realm:contentReference[oaicite:0]{index=0}.",
-    "longDescription": "FocusList offers a clean, pastel-themed interface built with Flutter (Dart) and uses Realm for local data storage:contentReference[oaicite:1]{index=1}. It employs an MVVM architecture (with Provider) and includes unit tests for reliability:contentReference[oaicite:2]{index=2}. Key features include adding, toggling, and deleting tasks (each shown as soft pastel tiles) and offline data persistence via Realm:contentReference[oaicite:3]{index=3}.",
-    "technologies": ["Flutter", "Dart", "Realm DB", "Provider (MVVM)"],
-    "features": [
-      "Add, toggle, and delete tasks",
-      "Soft pastel tile backgrounds for tasks",
-      "Quick task entry via a floating action button (FAB)",
-      "Local data persistence using Realm DB",
-      "MVVM architecture with Provider for state management",
-      "Unit tested with mock dependencies"
-    ],
-    "githubUrl": "https://github.com/rajathk/focuslist",
-    "demoUrl": "#",
-    "status": "Completed",
-    "teamSize": "Solo Project"
-  },
-  {
-    "title": "Agile Tracker (Backend)",
-    "subtitle": "Spring Boot Project Management API",
-    "description": "Agile Tracker Backend is a project management application (backend) implemented using Java and Spring Boot:contentReference[oaicite:4]{index=4}.",
-    "longDescription": "This backend service provides RESTful APIs for managing projects, tasks, and user accounts. It is developed with Spring Boot for rapid setup of endpoints and typically uses a relational database (e.g., MySQL) for persistence. The backend also includes a Dockerfile for containerized deployment.",
-    "technologies": ["Java", "Spring Boot", "Spring Data JPA", "MySQL", "Docker"],
-    "features": [
-      "RESTful API endpoints for project and task management",
-      "CRUD operations for projects, tasks, and user entities",
-      "Secure authentication support (e.g., JWT)",
-      "Containerized deployment via Docker"
-    ],
-    "githubUrl": "https://github.com/rajathk/agile-tracker-backend",
-    "demoUrl": "#",
-    "status": "Completed",
-    "teamSize": "Solo Project"
-  },
-  {
-    "title": "Agile Tracker (Frontend)",
-    "subtitle": "React Project Management UI",
-    "description": "Agile Tracker Frontend is a project management application (frontend) built with React:contentReference[oaicite:5]{index=5}.",
-    "longDescription": "This React-based frontend provides a user interface for managing projects and tasks, consuming the APIs provided by the backend. It likely includes components for creating and updating tasks and presents data in a clean dashboard or kanban style. The app is fully client-side and uses modern JavaScript (ES6+) and CSS for styling.",
-    "technologies": ["JavaScript", "React", "HTML", "CSS"],
-    "features": [
-      "Interactive task board interface",
-      "Responsive design for project management",
-      "Integration with Agile Tracker backend APIs",
-      "Client-side data handling and state management"
-    ],
-    "githubUrl": "https://github.com/rajathk/agile-tracker-frontend",
-    "demoUrl": "#",
-    "status": "Completed",
-    "teamSize": "Solo Project"
-  },
-  {
-    "title": "Saltwater.github.io",
-    "subtitle": "Static Personal Website",
-    "description": "Saltwater.github.io appears to be a static personal website repository (no detailed information available).",
-    "longDescription": "This repository contains a static website (last updated 2015) comprising HTML, CSS, and image assets. It was likely used as a personal or project site featuring custom styling. No descriptive README or live demo link is provided.",
-    "technologies": ["HTML", "CSS", "JavaScript"],
-    "features": [
-      "Static content with custom CSS styling",
-      "Local image assets (in 'images' folder)",
-      "Likely hosted as a personal site (no live demo available)"
-    ],
-    "githubUrl": "https://github.com/rajathk/saltwater.github.io",
-    "demoUrl": "#",
-    "status": "Completed",
-    "teamSize": "Solo Project"
-  },
-  {
-    "title": "Game4Rage",
-    "subtitle": "Static Site (Custom Domain)",
-    "description": "Game4Rage is a static website repository (details not specified). It includes a CNAME, indicating a custom domain was used.",
-    "longDescription": "This repository holds a static site (likely for a gaming-related project) with HTML/CSS content. It has a CNAME file set (potentially pointing to a custom domain), but no README or visible content description. It appears to be an archived project with no active development.",
-    "technologies": ["HTML", "CSS", "JavaScript"],
-    "features": [
-      "Custom CNAME configuration (custom domain)",
-      "Static pages and assets (no dynamic backend)",
-      "Game-related content (presumably, based on name)"
-    ],
-    "githubUrl": "https://github.com/rajathk/game4rage",
-    "demoUrl": "#",
-    "status": "Completed",
-    "teamSize": "Solo Project"
-  },
-  {
-    "title": "Rajath K Portfolio (rajathk.github.io)",
-    "subtitle": "Personal Portfolio Website",
-    "description": "Personal portfolio website hosted by Rajath K to showcase his projects, skills, and contact information.",
-    "longDescription": "This is Rajath's personal portfolio site, containing sections for his bio, project gallery, and contact details. It is a static site built primarily with HTML, CSS, and a touch of JavaScript, designed with responsive layouts for desktop and mobile viewing. The site is live at http://www.rajathraomore.com.",
-    "technologies": ["HTML", "CSS", "JavaScript"],
-    "features": [
-      "Professional resume and bio section",
-      "Project gallery with links to source code",
-      "Contact form or email link",
-      "Responsive design for various devices"
-    ],
-    "githubUrl": "https://github.com/rajathk/rajathk.github.io",
-    "demoUrl": "http://www.rajathraomore.com",
-    "status": "Completed",
-    "teamSize": "Solo Project"
-  }
- 
+    {
+      title: "Portfolio Rajath",
+      subtitle: "Personal Portfolio Website",
+      description:
+        "A modern portfolio site showcasing projects, experience, and contact details with a clean and responsive layout.",
+      longDescription:
+        "This repository contains the source for my portfolio website. It focuses on performance, readability, and a structured section-based layout for projects, experience, and contact information.",
+      technologies: ["React", "TypeScript", "Vite", "Tailwind CSS", "shadcn/ui"],
+      features: [
+        "Responsive layout for desktop and mobile",
+        "Project and experience showcase sections",
+        "Reusable component-based UI architecture",
+        "Client-side routing with React Router",
+        "Consistent design tokens and utility styles",
+      ],
+      githubUrl: "https://github.com/rajath-hk/portfolio_rajath",
+      demoUrl: "#",
+      status: "Production",
+      teamSize: "Solo Project",
+    },
+    {
+      title: "AI Chatbot",
+      subtitle: "Conversational Assistant Project",
+      description:
+        "An AI chatbot project focused on handling user prompts and generating contextual responses.",
+      longDescription:
+        "This project explores chatbot workflows, including prompt handling, response generation, and application structure for integrating language models into a usable interface.",
+      technologies: ["Python", "API Integration", "NLP", "Frontend UI"],
+      features: [
+        "Prompt-response chat flow",
+        "Context-aware message handling",
+        "Configurable model or API integration layer",
+        "Structured backend logic for chat requests",
+        "Extensible codebase for future features",
+      ],
+      githubUrl: "https://github.com/rajath-hk/AI-Chatbot",
+      demoUrl: "#",
+      status: "Completed",
+      teamSize: "Solo Project",
+    },
+    {
+      title: "Online Classroom Platform",
+      subtitle: "Virtual Learning System",
+      description:
+        "A classroom platform for managing online teaching workflows, interaction, and remote learning sessions.",
+      longDescription:
+        "The project is designed around remote classroom needs such as class participation, communication, and student-teacher coordination in a web-based environment.",
+      technologies: ["React", "Node.js", "Real-time Communication", "Web App"],
+      features: [
+        "Classroom session management",
+        "Interactive communication workflows",
+        "User role support for instructor and learner",
+        "Modular architecture for new classroom tools",
+        "Responsive interface for common devices",
+      ],
+      githubUrl: "https://github.com/rajath-hk/Online-Classroom-Platform",
+      demoUrl: "#",
+      status: "Completed",
+      teamSize: "Solo Project",
+    },
+    {
+      title: "MadCreative",
+      subtitle: "Creative Project Website",
+      description:
+        "A creative-focused web project highlighting branding, visual content, and presentation-driven pages.",
+      longDescription:
+        "MadCreative is structured as a showcase-oriented web project with emphasis on visual hierarchy, project storytelling, and crisp layout composition.",
+      technologies: ["HTML", "CSS", "JavaScript", "Frontend Design"],
+      features: [
+        "Visual-first landing sections",
+        "Project or service presentation blocks",
+        "Custom styling with strong branding",
+        "Simple navigation and content flow",
+        "Reusable page structure for expansion",
+      ],
+      githubUrl: "https://github.com/rajath-hk/madcreative",
+      demoUrl: "#",
+      status: "Completed",
+      teamSize: "Solo Project",
+    },
+    {
+      title: "Timer",
+      subtitle: "Time Tracking Utility",
+      description:
+        "A focused timer application built for productivity and time management use cases.",
+      longDescription:
+        "This project provides a simple and practical timer experience suitable for study sessions, workflow timing, and task-focused productivity cycles.",
+      technologies: ["JavaScript", "Frontend", "State Management"],
+      features: [
+        "Start, pause, and reset controls",
+        "Clear timer state visualization",
+        "Minimal interface for quick usage",
+        "Reliable interval handling logic",
+        "Reusable timer component structure",
+      ],
+      githubUrl: "https://github.com/rajath-hk/timer",
+      demoUrl: "#",
+      status: "Completed",
+      teamSize: "Solo Project",
+    },
+    {
+      title: "Retro",
+      subtitle: "Retro-Themed Web Experience",
+      description:
+        "A retro-inspired project exploring nostalgic UI patterns and stylistic frontend design.",
+      longDescription:
+        "Retro focuses on visual experimentation and themed interaction patterns, combining a classic aesthetic with modern frontend development practices.",
+      technologies: ["HTML", "CSS", "JavaScript", "UI Design"],
+      features: [
+        "Retro visual language and typography",
+        "Theme-consistent components",
+        "Interactive front-end behavior",
+        "Layout tuned for modern screen sizes",
+        "Modular files for maintainable styling",
+      ],
+      githubUrl: "https://github.com/rajath-hk/retro",
+      demoUrl: "#",
+      status: "Completed",
+      teamSize: "Solo Project",
+    },
+    {
+      title: "Attendance",
+      subtitle: "Attendance Management System",
+      description:
+        "An attendance project to record, manage, and track user or student presence efficiently.",
+      longDescription:
+        "This project is built around attendance workflows, including record maintenance and structured tracking to reduce manual effort and improve consistency.",
+      technologies: ["Web App", "Data Handling", "CRUD Operations"],
+      features: [
+        "Attendance record creation and updates",
+        "Structured listing and tracking views",
+        "Basic validation for entry integrity",
+        "Simple management workflow for repeated use",
+        "Extensible foundation for reporting features",
+      ],
+      githubUrl: "https://github.com/rajath-hk/attendance",
+      demoUrl: "#",
+      status: "Completed",
+      teamSize: "Solo Project",
+    },
+    {
+      title: "HegdeOS",
+      subtitle: "Operating System Development Project",
+      description:
+        "A systems-level project exploring custom operating system components and low-level programming concepts.",
+      longDescription:
+        "HegdeOS is focused on core OS concepts such as low-level architecture, system behavior, and building foundational operating system functionality from scratch.",
+      technologies: ["C", "C++", "Assembly", "Systems Programming"],
+      features: [
+        "Custom low-level systems code",
+        "Exploration of kernel-oriented concepts",
+        "Hands-on architecture and boot flow experimentation",
+        "Incremental development of core OS modules",
+        "Learning-focused implementation approach",
+      ],
+      githubUrl: "https://github.com/rajath-hk/HegdeOS",
+      demoUrl: "#",
+      status: "In Development",
+      teamSize: "Solo Project",
+    },
+    {
+      title: "Token",
+      subtitle: "Token-Based App Concept",
+      description:
+        "A token-focused project centered around identity, authorization, or tokenized workflow handling.",
+      longDescription:
+        "This repository explores token-related logic and application structure, with emphasis on managing secure flows or token-driven operations in a practical codebase.",
+      technologies: ["JavaScript", "Authentication Concepts", "Backend Logic"],
+      features: [
+        "Token creation or handling workflow",
+        "Secure request flow structure",
+        "Reusable utility functions for token operations",
+        "Readable project organization",
+        "Foundation for future auth enhancements",
+      ],
+      githubUrl: "https://github.com/rajath-hk/token",
+      demoUrl: "#",
+      status: "Completed",
+      teamSize: "Solo Project",
+    },
+    {
+      title: "Lofi YouTube Stream",
+      subtitle: "Streaming Interface Project",
+      description:
+        "A lofi-themed streaming project intended for continuous playback and relaxed listening sessions.",
+      longDescription:
+        "This repository is oriented around a simple streaming experience, likely integrating YouTube playback and a lightweight UI for background music usage.",
+      technologies: ["JavaScript", "YouTube Integration", "Frontend UI"],
+      features: [
+        "Embedded stream playback",
+        "Minimal controls for continuous listening",
+        "Lightweight and distraction-free layout",
+        "Theme aligned to lofi style",
+        "Simple deployment-friendly frontend",
+      ],
+      githubUrl: "https://github.com/rajath-hk/lofi-youtube-stream",
+      demoUrl: "#",
+      status: "Completed",
+      teamSize: "Solo Project",
+    },
+    {
+      title: "MGM Clinic",
+      subtitle: "Clinic Management Project",
+      description:
+        "A healthcare-oriented project for organizing clinic workflows and operational records.",
+      longDescription:
+        "MGM Clinic focuses on practical clinic management needs, providing a project structure that can support records, scheduling, and streamlined staff workflows.",
+      technologies: ["Web Application", "Data Management", "Admin UI"],
+      features: [
+        "Structured clinic data workflow",
+        "Management-oriented user interface",
+        "Organized records and operational flow",
+        "Maintainable project architecture",
+        "Extensible for additional clinic modules",
+      ],
+      githubUrl: "https://github.com/rajath-hk/MGM_CLINIC",
+      demoUrl: "#",
+      status: "Completed",
+      teamSize: "Solo Project",
+    },
+    {
+      title: "MGME AR By Rajath",
+      subtitle: "Augmented Reality Experience",
+      description:
+        "An AR-focused project exploring immersive and interactive augmented reality application behavior.",
+      longDescription:
+        "This project investigates AR implementation patterns and user interaction design in augmented environments, with a structure suitable for iterative visual experimentation.",
+      technologies: ["AR Development", "3D Interaction", "App Prototyping"],
+      features: [
+        "AR scene and interaction workflows",
+        "Immersive visual experience concepts",
+        "Prototype-friendly project setup",
+        "Iteration-ready architecture for AR enhancements",
+        "Foundation for production-grade AR use cases",
+      ],
+      githubUrl: "https://github.com/rajath-hk/MGME_AR_BY_RAJATH",
+      demoUrl: "#",
+      status: "In Development",
+      teamSize: "Solo Project",
+    },
   ];
 
   return (
