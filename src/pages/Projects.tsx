@@ -1,88 +1,131 @@
-import React from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import { ExternalLink, Github, Users, Zap, Award } from "lucide-react";
+import { ExternalLink, Github, Users } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Projects = () => {
   const projects = [
-    {
-      title: "Online Classroom Platform",
-      subtitle: "Real-Time Virtual Learning Environment",
-      description: "A comprehensive virtual classroom platform enabling real-time video communication, live chat, and class management for remote education.",
-      longDescription: "Built for MOV Agency's digital marketing program, this platform provides a seamless virtual classroom experience with WebRTC-powered video conferencing, text chat, user authentication, and class scheduling.",
-      technologies: ["React", "WebRTC", "Node.js", "Socket.io", "MongoDB", "Authentication"],
-      features: [
-        "Real-time peer-to-peer video communication using WebRTC",
-        "Live text chat with message history",
-        "User authentication and role management",
-        "Class scheduling and calendar integration",
-        "Responsive design for mobile and desktop",
-        "99% uptime serving 50+ concurrent users"
-      ],
-      githubUrl: "https://github.com/rajath-hk/classroom-platform",
-      demoUrl: "#",
-      status: "Production",
-      teamSize: "Solo Project"
-    },
-    {
-      title: "AI-Powered Chatbot",
-      subtitle: "Intelligent Customer Support Assistant",
-      description: "An advanced chatbot leveraging GPT and Llama 3 models to provide intelligent customer support with contextual understanding and personalized responses.",
-      longDescription: "This project demonstrates the integration of cutting-edge AI models to create a conversational agent capable of understanding context, maintaining conversation history, and providing accurate responses to user queries.",
-      technologies: ["Python", "GPT API", "Llama 3", "FastAPI", "React", "Tailwind CSS"],
-      features: [
-        "Natural Language Processing with GPT and Llama 3",
-        "Context-aware conversation management",
-        "Custom training for domain-specific knowledge",
-        "Multi-language support",
-        "Integration-ready API endpoints",
-        "Analytics dashboard for conversation insights"
-      ],
-      githubUrl: "https://github.com/rajath-hk/ai-chatbot",
-      demoUrl: "#",
-      status: "Development",
-      teamSize: "Solo Project"
-    },
-    {
-      title: "Portfolio Website",
-      subtitle: "Personal Brand Showcase",
-      description: "A modern, responsive portfolio website showcasing my skills, projects, and experiences with interactive elements and smooth animations.",
-      longDescription: "This very website you're browsing is a project that demonstrates my frontend development skills with React, TypeScript, and modern UI frameworks. It features responsive design, dark/light mode, and smooth animations.",
-      technologies: ["React", "TypeScript", "Tailwind CSS", "Vite", "shadcn/ui"],
-      features: [
-        "Fully responsive design for all device sizes",
-        "Dark/light mode with system preference detection",
-        "Smooth animations and transitions",
-        "Performance optimized with lazy loading",
-        "SEO-friendly structure",
-        "Accessible UI components"
-      ],
-      githubUrl: "https://github.com/rajath-hk/portfolio",
-      demoUrl: "https://rajath-hk.github.io/portfolio_rajath/",
-      status: "Production",
-      teamSize: "Solo Project"
-    },
-    {
-      title: "Video Editing Reel",
-      subtitle: "Creative Showreel Compilation",
-      description: "A professionally edited video reel showcasing my creative video editing and motion graphics skills for promotional and entertainment purposes.",
-      longDescription: "This project demonstrates my creative abilities in video editing, motion graphics, color grading, and storytelling. The reel combines various projects to showcase versatility and technical proficiency.",
-      technologies: ["Adobe Premiere Pro", "After Effects", "Photoshop", "DaVinci Resolve"],
-      features: [
-        "Professional color grading and correction",
-        "Complex motion graphics and animations",
-        "Audio mixing and sound design",
-        "Storytelling through visual narrative",
-        "Industry-standard export settings",
-        "Multiple format deliveries"
-      ],
-      githubUrl: "#",
-      demoUrl: "#",
-      status: "Completed",
-      teamSize: "Solo Project"
-    }
+  {
+    "title": "HegdeOS",
+    "subtitle": "Featured Project - Next-Gen Operating System",
+    "description": "HegdeOS is an open-source operating system project (details limited). It aims to explore low-level system programming with custom kernel development, multitasking, and a graphical interface.",
+    "longDescription": "This flagship personal project involves designing a standalone operating system from the ground up. It likely encompasses kernel development, process scheduling, memory management, and a basic GUI, serving as a platform to experiment with systems-level concepts. Since HegdeOS is a solo endeavor, the team size is one.",
+    "technologies": ["C", "C++", "Assembly", "Linux Kernel"],
+    "features": [
+      "Custom kernel architecture",
+      "Preemptive multitasking",
+      "Basic graphical user interface (GUI)",
+      "Lightweight design for learning OS principles"
+    ],
+    "githubUrl": "#",
+    "demoUrl": "#",
+    "status": "In Development",
+    "teamSize": "Solo Project"
+  },
+  {
+    "title": "FocusList",
+    "subtitle": "Minimalist To-Do List App",
+    "description": "FocusList is a minimal, pastel-themed to-do list app built with Flutter and Realm:contentReference[oaicite:0]{index=0}.",
+    "longDescription": "FocusList offers a clean, pastel-themed interface built with Flutter (Dart) and uses Realm for local data storage:contentReference[oaicite:1]{index=1}. It employs an MVVM architecture (with Provider) and includes unit tests for reliability:contentReference[oaicite:2]{index=2}. Key features include adding, toggling, and deleting tasks (each shown as soft pastel tiles) and offline data persistence via Realm:contentReference[oaicite:3]{index=3}.",
+    "technologies": ["Flutter", "Dart", "Realm DB", "Provider (MVVM)"],
+    "features": [
+      "Add, toggle, and delete tasks",
+      "Soft pastel tile backgrounds for tasks",
+      "Quick task entry via a floating action button (FAB)",
+      "Local data persistence using Realm DB",
+      "MVVM architecture with Provider for state management",
+      "Unit tested with mock dependencies"
+    ],
+    "githubUrl": "https://github.com/rajathk/focuslist",
+    "demoUrl": "#",
+    "status": "Completed",
+    "teamSize": "Solo Project"
+  },
+  {
+    "title": "Agile Tracker (Backend)",
+    "subtitle": "Spring Boot Project Management API",
+    "description": "Agile Tracker Backend is a project management application (backend) implemented using Java and Spring Boot:contentReference[oaicite:4]{index=4}.",
+    "longDescription": "This backend service provides RESTful APIs for managing projects, tasks, and user accounts. It is developed with Spring Boot for rapid setup of endpoints and typically uses a relational database (e.g., MySQL) for persistence. The backend also includes a Dockerfile for containerized deployment.",
+    "technologies": ["Java", "Spring Boot", "Spring Data JPA", "MySQL", "Docker"],
+    "features": [
+      "RESTful API endpoints for project and task management",
+      "CRUD operations for projects, tasks, and user entities",
+      "Secure authentication support (e.g., JWT)",
+      "Containerized deployment via Docker"
+    ],
+    "githubUrl": "https://github.com/rajathk/agile-tracker-backend",
+    "demoUrl": "#",
+    "status": "Completed",
+    "teamSize": "Solo Project"
+  },
+  {
+    "title": "Agile Tracker (Frontend)",
+    "subtitle": "React Project Management UI",
+    "description": "Agile Tracker Frontend is a project management application (frontend) built with React:contentReference[oaicite:5]{index=5}.",
+    "longDescription": "This React-based frontend provides a user interface for managing projects and tasks, consuming the APIs provided by the backend. It likely includes components for creating and updating tasks and presents data in a clean dashboard or kanban style. The app is fully client-side and uses modern JavaScript (ES6+) and CSS for styling.",
+    "technologies": ["JavaScript", "React", "HTML", "CSS"],
+    "features": [
+      "Interactive task board interface",
+      "Responsive design for project management",
+      "Integration with Agile Tracker backend APIs",
+      "Client-side data handling and state management"
+    ],
+    "githubUrl": "https://github.com/rajathk/agile-tracker-frontend",
+    "demoUrl": "#",
+    "status": "Completed",
+    "teamSize": "Solo Project"
+  },
+  {
+    "title": "Saltwater.github.io",
+    "subtitle": "Static Personal Website",
+    "description": "Saltwater.github.io appears to be a static personal website repository (no detailed information available).",
+    "longDescription": "This repository contains a static website (last updated 2015) comprising HTML, CSS, and image assets. It was likely used as a personal or project site featuring custom styling. No descriptive README or live demo link is provided.",
+    "technologies": ["HTML", "CSS", "JavaScript"],
+    "features": [
+      "Static content with custom CSS styling",
+      "Local image assets (in 'images' folder)",
+      "Likely hosted as a personal site (no live demo available)"
+    ],
+    "githubUrl": "https://github.com/rajathk/saltwater.github.io",
+    "demoUrl": "#",
+    "status": "Completed",
+    "teamSize": "Solo Project"
+  },
+  {
+    "title": "Game4Rage",
+    "subtitle": "Static Site (Custom Domain)",
+    "description": "Game4Rage is a static website repository (details not specified). It includes a CNAME, indicating a custom domain was used.",
+    "longDescription": "This repository holds a static site (likely for a gaming-related project) with HTML/CSS content. It has a CNAME file set (potentially pointing to a custom domain), but no README or visible content description. It appears to be an archived project with no active development.",
+    "technologies": ["HTML", "CSS", "JavaScript"],
+    "features": [
+      "Custom CNAME configuration (custom domain)",
+      "Static pages and assets (no dynamic backend)",
+      "Game-related content (presumably, based on name)"
+    ],
+    "githubUrl": "https://github.com/rajathk/game4rage",
+    "demoUrl": "#",
+    "status": "Completed",
+    "teamSize": "Solo Project"
+  },
+  {
+    "title": "Rajath K Portfolio (rajathk.github.io)",
+    "subtitle": "Personal Portfolio Website",
+    "description": "Personal portfolio website hosted by Rajath K to showcase his projects, skills, and contact information.",
+    "longDescription": "This is Rajath's personal portfolio site, containing sections for his bio, project gallery, and contact details. It is a static site built primarily with HTML, CSS, and a touch of JavaScript, designed with responsive layouts for desktop and mobile viewing. The site is live at http://www.rajathraomore.com.",
+    "technologies": ["HTML", "CSS", "JavaScript"],
+    "features": [
+      "Professional resume and bio section",
+      "Project gallery with links to source code",
+      "Contact form or email link",
+      "Responsive design for various devices"
+    ],
+    "githubUrl": "https://github.com/rajathk/rajathk.github.io",
+    "demoUrl": "http://www.rajathraomore.com",
+    "status": "Completed",
+    "teamSize": "Solo Project"
+  }
+ 
   ];
 
   return (
