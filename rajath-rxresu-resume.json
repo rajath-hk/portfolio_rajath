@@ -1,0 +1,537 @@
+{
+  "$schema": "https://rxresu.me/schema.json",
+  "version": 5,
+  "basics": {
+    "name": "Rajath Hegde",
+    "headline": "Full Stack Developer | AI/ML Enthusiast | Creative Problem Solver",
+    "email": "rajathhege71@gmail.com",
+    "phone": "+91 9482250897",
+    "location": "Udupi, Karnataka, India",
+    "url": "https://github.com/rajath-hk",
+    "customFields": [
+      {
+        "id": "cf_linkedin",
+        "key": "LinkedIn",
+        "value": "https://www.linkedin.com/in/rajath-hegde-1742462ab"
+      }
+    ]
+  },
+  "sections": {
+    "profiles": {
+      "title": "Profiles",
+      "columns": 1,
+      "hidden": false,
+      "items": [
+        {
+          "id": "profile_github",
+          "hidden": false,
+          "network": "GitHub",
+          "username": "rajath-hk",
+          "url": "https://github.com/rajath-hk"
+        },
+        {
+          "id": "profile_linkedin",
+          "hidden": false,
+          "network": "LinkedIn",
+          "username": "rajath-hegde-1742462ab",
+          "url": "https://www.linkedin.com/in/rajath-hegde-1742462ab"
+        }
+      ]
+    },
+    "summary": {
+      "title": "Summary",
+      "columns": 1,
+      "hidden": false,
+      "items": [
+        {
+          "id": "summary_main",
+          "hidden": false,
+          "content": "Versatile full stack developer with strong AI/ML integration experience and a creative production background. Built real-world products including virtual classroom platforms, AI chatbot systems, and responsive web applications. Skilled at combining technical rigor with user-focused design and polished delivery."
+        }
+      ]
+    },
+    "experience": {
+      "title": "Experience",
+      "columns": 1,
+      "hidden": false,
+      "items": [
+        {
+          "id": "exp_mov_agency",
+          "hidden": false,
+          "company": "MOV Agency",
+          "position": "Video Editor & Content Creator",
+          "date": {
+            "start": "2023-01-01",
+            "end": ""
+          },
+          "summary": "Creating engaging educational content for digital marketing and editing courses.",
+          "url": "",
+          "descriptions": [
+            "Edited 50+ educational videos for an e-learning platform.",
+            "Created custom animations to improve learning outcomes.",
+            "Collaborated with instructors on content flow and structure.",
+            "Delivered high-quality production on tight timelines.",
+            "Improved viewer engagement by 40% with dynamic editing techniques."
+          ]
+        },
+        {
+          "id": "exp_personal_projects",
+          "hidden": false,
+          "company": "Personal Projects",
+          "position": "Full Stack Developer",
+          "date": {
+            "start": "2022-01-01",
+            "end": ""
+          },
+          "summary": "Developing modern web applications and AI-enabled solutions.",
+          "url": "https://github.com/rajath-hk",
+          "descriptions": [
+            "Built a real-time virtual classroom platform with remote collaboration workflows.",
+            "Created AI chatbot systems using GPT and Llama-based integrations.",
+            "Developed responsive products with React, Node.js, and MongoDB.",
+            "Implemented authentication flows and REST APIs.",
+            "Deployed projects using cloud platforms including Vercel and Render."
+          ]
+        },
+        {
+          "id": "exp_freelance_design",
+          "hidden": false,
+          "company": "Freelance",
+          "position": "Creative Designer",
+          "date": {
+            "start": "2021-01-01",
+            "end": "2025-12-31"
+          },
+          "summary": "Designed visual and motion content for brands and digital platforms.",
+          "url": "",
+          "descriptions": [
+            "Created brand identities for 10+ startups.",
+            "Designed UI/UX for web and mobile products.",
+            "Produced motion graphics for campaigns and social content.",
+            "Developed print and event marketing assets.",
+            "Managed projects from concept to final delivery."
+          ]
+        }
+      ]
+    },
+    "education": {
+      "title": "Education",
+      "columns": 1,
+      "hidden": false,
+      "items": [
+        {
+          "id": "edu_mca",
+          "hidden": false,
+          "school": "AMC Engineering College",
+          "degree": "Master of Computer Applications (MCA)",
+          "date": "Currently Pursuing",
+          "summary": "Advanced software engineering, full-stack systems, and modern AI applications.",
+          "url": ""
+        },
+        {
+          "id": "edu_bca",
+          "hidden": false,
+          "school": "Mahatma Gandhi Memorial Evening College, Udupi",
+          "degree": "Bachelor of Computer Applications (BCA)",
+          "date": "Completed: 2025",
+          "summary": "Coursework includes data structures, DBMS, OOP, and software engineering.",
+          "url": ""
+        },
+        {
+          "id": "edu_puc",
+          "hidden": false,
+          "school": "Karnataka State Board",
+          "degree": "Pre-University Course (PUC) - PCM",
+          "date": "Completed: 2022",
+          "summary": "Physics, Chemistry, and Mathematics stream.",
+          "url": ""
+        },
+        {
+          "id": "edu_sslc",
+          "hidden": false,
+          "school": "Karnataka State Board",
+          "degree": "Secondary School Leaving Certificate (SSLC)",
+          "date": "Completed: 2020",
+          "summary": "Foundation across core academic subjects.",
+          "url": ""
+        }
+      ]
+    },
+    "projects": {
+      "title": "Projects",
+      "columns": 1,
+      "hidden": false,
+      "items": [
+        {
+          "id": "proj_portfolio",
+          "hidden": false,
+          "name": "Portfolio Rajath",
+          "description": "Personal portfolio site with project, experience, and contact sections.",
+          "date": {
+            "start": "",
+            "end": ""
+          },
+          "summary": "Built with React, TypeScript, Vite, and Tailwind CSS in a component-driven architecture.",
+          "url": "https://github.com/rajath-hk/portfolio_rajath",
+          "descriptions": [
+            "Responsive layout for desktop and mobile.",
+            "Reusable UI component structure.",
+            "Project and experience showcases."
+          ]
+        },
+        {
+          "id": "proj_ai_chatbot",
+          "hidden": false,
+          "name": "AI Chatbot",
+          "description": "Conversational assistant with contextual prompt-response handling.",
+          "date": {
+            "start": "",
+            "end": ""
+          },
+          "summary": "Integrates language model workflows with backend request handling and frontend chat experience.",
+          "url": "https://github.com/rajath-hk/AI-Chatbot",
+          "descriptions": [
+            "Context-aware chat logic.",
+            "Configurable model/API integration.",
+            "Extensible backend structure."
+          ]
+        },
+        {
+          "id": "proj_online_classroom",
+          "hidden": false,
+          "name": "Online Classroom Platform",
+          "description": "Virtual learning system for online teaching workflows and remote collaboration.",
+          "date": {
+            "start": "",
+            "end": ""
+          },
+          "summary": "Designed for participation, communication, and role-based interaction in web learning environments.",
+          "url": "https://github.com/rajath-hk/Online-Classroom-Platform",
+          "descriptions": [
+            "Session and communication workflows.",
+            "Instructor and learner role support.",
+            "Modular architecture for future tools."
+          ]
+        },
+        {
+          "id": "proj_madcreative",
+          "hidden": false,
+          "name": "MadCreative",
+          "description": "Creative web project focused on branding and visual storytelling.",
+          "date": {
+            "start": "",
+            "end": ""
+          },
+          "summary": "Showcase-oriented frontend with emphasis on visual hierarchy and narrative page structure.",
+          "url": "https://github.com/rajath-hk/madcreative",
+          "descriptions": [
+            "Visual-first landing sections.",
+            "Brand-led page composition.",
+            "Reusable layout patterns."
+          ]
+        },
+        {
+          "id": "proj_hegdeos",
+          "hidden": false,
+          "name": "HegdeOS",
+          "description": "Systems programming project exploring custom operating system concepts.",
+          "date": {
+            "start": "",
+            "end": ""
+          },
+          "summary": "Focuses on low-level architecture, boot flow, and kernel-oriented implementation learning.",
+          "url": "https://github.com/rajath-hk/HegdeOS",
+          "descriptions": [
+            "Low-level systems experiments in C/C++ and assembly.",
+            "Incremental core module development.",
+            "Architecture-focused learning project."
+          ]
+        },
+        {
+          "id": "proj_mgme_ar",
+          "hidden": false,
+          "name": "MGME AR By Rajath",
+          "description": "Augmented reality project exploring immersive interaction workflows.",
+          "date": {
+            "start": "",
+            "end": ""
+          },
+          "summary": "Prototype-ready structure for iterative AR design and interaction experimentation.",
+          "url": "https://github.com/rajath-hk/MGME_AR_BY_RAJATH",
+          "descriptions": [
+            "AR scene and interaction patterns.",
+            "Immersive experience prototyping.",
+            "Foundation for production expansion."
+          ]
+        }
+      ]
+    },
+    "skills": {
+      "title": "Skills",
+      "columns": 1,
+      "hidden": false,
+      "items": [
+        {
+          "id": "skill_js_ts",
+          "hidden": false,
+          "name": "JavaScript / TypeScript",
+          "description": "Frontend and full-stack web application development",
+          "level": 5,
+          "keywords": [
+            "React",
+            "TypeScript",
+            "Node.js",
+            "Vite",
+            "Express"
+          ]
+        },
+        {
+          "id": "skill_ai_ml",
+          "hidden": false,
+          "name": "AI/ML Integration",
+          "description": "Practical model integration for conversational and NLP features",
+          "level": 5,
+          "keywords": [
+            "GPT",
+            "Llama",
+            "NLP",
+            "TensorFlow",
+            "PyTorch"
+          ]
+        },
+        {
+          "id": "skill_databases",
+          "hidden": false,
+          "name": "Database and APIs",
+          "description": "Data modeling, CRUD, and backend API architecture",
+          "level": 4,
+          "keywords": [
+            "MongoDB",
+            "SQL",
+            "REST APIs",
+            "Authentication"
+          ]
+        },
+        {
+          "id": "skill_creative",
+          "hidden": false,
+          "name": "Creative Production",
+          "description": "Video, motion, and design workflows for digital products",
+          "level": 5,
+          "keywords": [
+            "Premiere Pro",
+            "After Effects",
+            "Photoshop",
+            "Figma",
+            "Animation"
+          ]
+        },
+        {
+          "id": "skill_tools",
+          "hidden": false,
+          "name": "Tools and Platforms",
+          "description": "Deployment and development workflow tooling",
+          "level": 4,
+          "keywords": [
+            "Git",
+            "CI/CD",
+            "Docker",
+            "Linux",
+            "AWS",
+            "Azure"
+          ]
+        }
+      ]
+    },
+    "languages": {
+      "title": "Languages",
+      "columns": 1,
+      "hidden": false,
+      "items": [
+        {
+          "id": "lang_kannada",
+          "hidden": false,
+          "name": "Kannada",
+          "description": "Native",
+          "level": 5
+        },
+        {
+          "id": "lang_english",
+          "hidden": false,
+          "name": "English",
+          "description": "Fluent",
+          "level": 5
+        },
+        {
+          "id": "lang_hindi",
+          "hidden": false,
+          "name": "Hindi",
+          "description": "Fluent",
+          "level": 5
+        },
+        {
+          "id": "lang_tulu",
+          "hidden": false,
+          "name": "Tulu",
+          "description": "Receptive",
+          "level": 3
+        },
+        {
+          "id": "lang_konkani",
+          "hidden": false,
+          "name": "Konkani",
+          "description": "Mother Tongue",
+          "level": 5
+        },
+        {
+          "id": "lang_japanese",
+          "hidden": false,
+          "name": "Japanese",
+          "description": "Beginner",
+          "level": 2
+        }
+      ]
+    },
+    "interests": {
+      "title": "Interests",
+      "columns": 1,
+      "hidden": false,
+      "items": [
+        {
+          "id": "interest_creative",
+          "hidden": false,
+          "name": "Creative Media",
+          "keywords": [
+            "Animation",
+            "Photography",
+            "Music Production"
+          ]
+        },
+        {
+          "id": "interest_tech",
+          "hidden": false,
+          "name": "Technology",
+          "keywords": [
+            "Open Source",
+            "Tech Blogging",
+            "Creative Innovation"
+          ]
+        },
+        {
+          "id": "interest_personal",
+          "hidden": false,
+          "name": "Personal",
+          "keywords": [
+            "Cajon",
+            "Gaming"
+          ]
+        }
+      ]
+    },
+    "awards": {
+      "title": "Awards",
+      "columns": 1,
+      "hidden": true,
+      "items": []
+    },
+    "certifications": {
+      "title": "Certifications",
+      "columns": 1,
+      "hidden": true,
+      "items": []
+    },
+    "publications": {
+      "title": "Publications",
+      "columns": 1,
+      "hidden": true,
+      "items": []
+    },
+    "volunteer": {
+      "title": "Volunteer",
+      "columns": 1,
+      "hidden": true,
+      "items": []
+    },
+    "references": {
+      "title": "References",
+      "columns": 1,
+      "hidden": true,
+      "items": []
+    }
+  },
+  "metadata": {
+    "template": "azurill",
+    "layout": {
+      "main": [
+        [
+          "summary",
+          "experience",
+          "education",
+          "projects",
+          "volunteer",
+          "references"
+        ],
+        [
+          "summary",
+          "experience",
+          "education",
+          "projects",
+          "volunteer",
+          "references"
+        ]
+      ],
+      "sidebar": [
+        [
+          "profiles",
+          "skills",
+          "languages",
+          "interests",
+          "certifications",
+          "awards",
+          "publications"
+        ],
+        [
+          "profiles",
+          "skills",
+          "languages",
+          "interests",
+          "certifications",
+          "awards",
+          "publications"
+        ]
+      ]
+    },
+    "css": ".page { padding: 0; }",
+    "page": {
+      "format": "a4",
+      "orientation": "portrait",
+      "options": {
+        "breakLine": true,
+        "pageNumbers": true
+      },
+      "margin": {
+        "top": 14,
+        "right": 14,
+        "bottom": 14,
+        "left": 14
+      }
+    },
+    "theme": {
+      "background": "#ffffff",
+      "text": "#000000",
+      "primary": "#dc2626"
+    },
+    "typography": {
+      "fontFamily": "IBM Plex Serif",
+      "fontSize": 13,
+      "lineHeight": 1.5,
+      "hideIcons": false,
+      "underlineLinks": true
+    },
+    "notes": {
+      "id": "note_main",
+      "content": ""
+    }
+  },
+  "customSections": []
+}
